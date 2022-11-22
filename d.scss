@@ -1,0 +1,36 @@
+.header-ngu {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header-nav {
+    display: none;
+}
+
+.menu-img {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.search-img {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .menu-img {
+        display: none;
+    }
+
+    .header-nav {
+        display: inline;
+    }
+
+    .search-img {
+        display: inline;
+    }
+
+    .header-ngu {
+        justify-content: space-between;
+    }
+}

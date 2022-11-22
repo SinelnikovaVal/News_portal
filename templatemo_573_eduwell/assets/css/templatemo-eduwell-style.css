@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+html,
+body {
+  background: #51823c;
+  font-family: 'Bitter Pro', sans-serif;
+}
+
+@media (max-width: 991px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+.section-heading {
+  position: relative;
+  padding-top: 20px;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+/* WhatThey напис */
+.section-heading h4 {
+  margin-top: 10px;
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #111;
+}
+
+.section-heading h4 em {
+  font-style: normal;
+  color: rgb(24, 177, 24);
+}
+
+.section-heading p {
+  margin-top: 30px;
+}
+
+/* 
+---------------------------------------------
+testimonials
+--------------------------------------------- 
+*/
+
+section.testimonials {
+  position: relative;
+}
+
+/*section.testimonials:before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/testimonials-left-dec.png);
+  left: 0px;
+  top: -140px;
+  width: 593px;
+  height: 352px;
+  z-index: 1;
+}
+
+section.testimonials:after {
+  position: absolute;
+  content: '';
+  background-image: url(../images);
+  right: 0px;
+  bottom: -140px;
+  width: 632px;
+  height: 352px;
+  z-index: 1;
+}
+*/
+
+.testimonials .item {
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #F2EFE6;
+  margin: 15px;
+  transition: all .3s;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials .item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+
+.testimonials .item p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.testimonials .item h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+
+.testimonials .item span {
+  font-size: 13px;
+  font-weight: 700;
+  color:  rgb(55, 212, 70);
+}
+
+.testimonials .item img {
+  max-width: 44px;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  bottom: 30px
+}
+
+.testimonials .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.testimonials .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 10px 4px;
+}
+
+.testimonials .owl-dots .active {
+  background-color: rgb(55, 212, 70);
+}
+
+/* 
+---------------------------------------------
+contact us
+--------------------------------------------- 
+*/
+/*
+section.contact-us {
+  background-image: url(../images/lounge-scheme-for-the-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  position: relative;
+}
+
+
+section.contact-us:after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/);
+  left: 0px;
+  top: 60px;
+  width: 267px;
+  height: 396px;
+  z-index: 1;
+}
+*/
+
+section.contact-us .contact-info {
+  background-color: #F2EFE6;
+  margin-top: -30px;
+  margin-bottom: 35px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  z-index: 5;
+  position: relative;
+  padding: 20px;
+}
+
+.row2 {
+  margin-top: -30px;
+}
+
+section.contact-us .contact-info .icon i {
+  float: left;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(-145deg, rgb(11, 179, 34) 0%, rgb(10, 114, 14) 100%);
+  color: #F2EFE6;
+}
+
+section.contact-us .contact-info h4 {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+section.contact-us .contact-info span {
+  font-size: 15px;
+  color: rgb(24, 177, 24);
+  font-weight: 700;
+}
+
+section.contact-us .section-heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+section.contact-us #contact {
+  margin-left: -100px;
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+  margin-top: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+section.contact-us #contact input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f4f7fb;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+section.contact-us #contact textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 180px;
+  border-radius: 5px;
+  background-color: #f4f7fb;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+section.contact-us #contact button {
+  font-size: 13px;
+  color: #fff;
+  background: linear-gradient(-145deg, rgb(11, 179, 34) 0%, rgb(10, 114, 14) 100%);  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s;
+  transition: all .3s;
+  border: none;
+  outline: none;
+}
+
+section.contact-us #contact button:hover {
+  opacity: 0.9;
+}
+
+section.contact-us ul.social-icons li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1330px) {
+  .services .owl-nav .owl-next {
+    right: -30px;
+  }
+
+  .services .owl-nav .owl-prev {
+    left: -25px;
+  }
+
+  .our-courses .owl-nav .owl-next {
+    right: -30px;
+  }
+
+  .our-courses .owl-nav .owl-prev {
+    left: -25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-banner .right-image {
+    margin-left: 60px;
+  }
+
+  .main-banner .header-text h2 {
+    font-size: 62px;
+  }
+
+  .header-area {
+    background: rgb(34, 124, 55) !important;
+    background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%) !important;
+  }
+
+  .services .owl-nav .owl-next {
+    right: -70px;
+  }
+
+  .services .owl-nav .owl-prev {
+    left: -65px;
+  }
+
+  .our-courses .owl-nav .owl-next {
+    right: -70px;
+  }
+
+  .our-courses .owl-nav .owl-prev {
+    left: -65px;
+  }
+}
+
+
+@media (max-width: 1005px) {
+  .services .owl-nav .owl-next {
+    display: none;
+  }
+
+  .services .owl-nav .owl-prev {
+    display: none;
+  }
+
+  .our-courses .owl-nav .owl-next {
+    display: none;
+  }
+
+  .our-courses .owl-nav .owl-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .main-banner .header-text {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .main-banner .right-image {
+    margin-left: 0px;
+  }
+
+  section.our-courses ul.nacc {
+    margin-left: 0px !important;
+  }
+
+  section.simple-cta {
+    margin-top: 0px;
+  }
+
+  section.simple-cta .left-image {
+    margin-right: 0px;
+    margin-bottom: 45px;
+  }
+
+  section.contact-us .contact-info {
+    margin-top: 15px;
+  }
+
+  section.contact-us #contact {
+    margin-left: 0px;
+  }
+
+  section.contact-us #contact button {
+    float: none;
+  }
+
+  section.get-info .left-image {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  section.get-info .info-item {
+    margin-top: 60px;
+  }
+
+  section.our-office #video {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  section.featured-product .left-info .info-item,
+  section.featured-product .right-info .info-item {
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+
+  section.featured-product .left-info .info-item .icon {
+    right: 50%;
+    transform: translateX(40px);
+  }
+
+  section.featured-product .right-info .info-item .icon {
+    left: 50%;
+    transform: translateX(-40px);
+  }
+
+  section.featured-product .product-image {
+    margin: 60px
+  }
+
+  section.our-team ul.nacc li .left-content span a,
+  section.our-courses ul.nacc li .right-content span {
+    margin-right: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    display: none;
+  }
+
+  section.our-courses ul.nacc li .left-image,
+  section.our-team ul.nacc li .right-image {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    transform: translateY(-0%);
+  }
+
+  section.our-courses ul.nacc li .left-image img,
+  section.our-team ul.nacc li .right-image img {
+    border-radius: 15px;
+  }
+
+  section.our-courses ul.nacc li,
+  section.our-team ul.nacc li {
+    padding: 0px;
+  }
+
+  section.our-courses ul.nacc li .right-content {
+    margin-left: 0px;
+    padding: 30px;
+  }
+
+  section.our-team ul.nacc li .left-content {
+    margin-right: 0px;
+    padding: 30px;
+  }
+
+  section.our-team .naccs .menu div {
+    width: 14%;
+    margin: 0px 5px;
+  }
+
+  section.our-team .naccs .menu div.active img {
+    border: 3px solid #dc8cdb;
+  }
+
+  section.our-team .naccs .menu div h4,
+  section.our-team .naccs .menu div span {
+    display: none;
+  }
+
+  section.more-info .count-area-content .count-title {
+    font-size: 22px;
+  }
+}

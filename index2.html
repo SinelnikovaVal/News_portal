@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main2.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+  <script src="jquery.slidertron-1.1.js" type="text/javascript"></script>
+  <title>ngu2</title>
+  <script type="text/javascript">
+    $(function () {
+      $('#slider').slidertron({
+        viewerSelector: '.viewer',
+        indicatorSelector: '.indicator span',
+        reelSelector: '.reel',
+        slidesSelector: '.slide',
+        speed: 'slow',
+        advanceDelay: 4000
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <header id="ngu_header" class="header-ngu">
+    <img src="/img/logo_ngu.png" style="width: 20px; height: 30px;">
+    <div class="header-nav">
+      <a href="./index.html" style="color: rgb(55, 212, 70);">НГУ</a>
+      <a href="./index3.html" style="color: rgb(55, 212, 70);">НОВИНИ</a>
+      <a href="./index2.html" style="color: rgb(55, 212, 70);">ФОТОГАЛЕРЕЯ</a>
+      <a href="./templatemo_573_eduwell/index.html" style="color: rgb(55, 212, 70);">КОНТАКТИ</a>
+    </div>
+    <div class="dropdown">
+      <button class="menu-btn">***</button>
+      <div class="dropdown-menu">
+        <a href="./index1.html">НГУ</a>
+        <a href="./index3.html">НОВИНИ</a>
+        <a href="./index3.html">ФОТОГАЛЕРЕЯ</a>
+        <a href="./index2.html">КОНТАКТИ</a>
+      </div>
+    </div>
+    <img src="/img/icons_posh.png" style="height: 30px" class="search-img">
+    </div>
+  </header>
+  <section class="section-slider">
+    <div id="slider">
+      <div class="viewer">
+        <div class="reel">
+          <div class="slide">
+            <img src="/img/img_1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/img_2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/img_3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/img_4.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/img_5.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/img_6.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/img/img_7.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="indicator">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

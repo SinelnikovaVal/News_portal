@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #51823c;
+    font-family: 'Bitter Pro', sans-serif;
+}
+
+.header-ngu {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: none;
+}
+
+.menu-img {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.menu-btn {
+    background-color: #51823c;
+    color: rgb(239, 217, 16);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(4, 106, 6);
+    left: -50px;
+    width: 170px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(238, 203, 30);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .menu-btn {
+    background-color: rgb(61, 164, 87);
+}
+
+.search-img {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .menu-img {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .header-nav {
+        display: inline;
+    }
+
+    .search-img {
+        display: inline;
+    }
+
+    .header-ngu {
+        justify-content: space-between;
+    }
+}
+
+.section-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background: #F2EFE6;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.847);
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 5px 5px 15px 5px;
+    
+}
+
+.card-desc {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 5px 5px 5px
+}
+.card-shrift{
+    text-align: center;
+    font-size: 18px;
+}
+@media (min-width: 576px) {
+    .card {
+        justify-content: center;
+        width: 80%;
+        padding: 30px 50px;
+    }
+    .card-image {
+        width: 500px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+}
